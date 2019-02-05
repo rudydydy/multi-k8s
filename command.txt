@@ -1,0 +1,21 @@
+kubectl apply -f <file_name/directory_name>
+kubectl get pods
+kubectl get deployments
+kubectl get services
+kubectl get secrets
+kubectl get pv
+kubectl get pvc
+kubectl delete deployment <deployment_name>
+kubectl create secret generic <secret_name> --from-literal key=value
+
+
+---- note ----
+Objects:
+  Deployments: administrate and manage a set of pods
+  Services:
+    ClusterIP: expose set of pods to other objects in the cluster
+    NodePort: expose set of pods to the outside world (only good for dev purposes)
+    LoadBalancer: legacy way of getting network traffic into a cluster
+    Ingress: expose a set of services to the outside world
+  Secrets:
+
